@@ -1,0 +1,163 @@
+/* --- Ultima cobranca --- */
+
+.box__title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+
+.ultima--cobranca__titulo {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.botoes {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.botão {
+    color: var(--secondary-text-color);
+    padding: 8px 6px;
+    border-radius: 8px;
+}
+
+.nav-pills>.nav-item>.active {
+    color: var(--menu-item-color);
+    background-color: var(--btn-item-bgcolor);
+}
+
+.botão:hover {
+    color: #000;
+    background-color: var(--btn-item-bgcolor);
+}
+
+.button__cobranca-1 {
+    text-align: end;
+}
+
+@media screen and (min-width:768px) {
+    .button__cobranca-1 {
+        margin-left: 150px;
+    }
+}
+
+.button__cobranca-2 {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .button__cobranca-2 {
+        display: block;
+    }
+
+    .button__cobranca-1 {
+        display: none;
+    }
+
+}
+
+.tabela-cel {
+    margin-top: 2rem;
+}
+
+.tabela {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .tabela-cel {
+
+        display: none;
+    }
+
+    .tabela {
+        margin-top: 2rem;
+        display: inline-table;
+    }
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+thead th {
+    text-align: left;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.01em;
+    padding-bottom: 22px;
+}
+
+tbody td {
+    font-size: 14px;
+    padding: 24px 0;
+}
+
+tbody td:nth-child(1) {
+    color: var(--secondary-text-color);
+}
+
+.status {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    border-radius: 6px;
+}
+
+.status-processed {
+    background-color: #D0E485;
+    width: 100px;
+
+}
+
+.status-processed::before {
+    content: "Processado";
+}
+
+.status-process {
+    background-color: #FFC875;
+    width: 175px;
+}
+
+.status-process::before {
+    content: "Em processamento";
+}
+
+.status-erro {
+    background-color: #FAC1B4;
+    width: 125px;
+}
+
+.status-erro::before {
+    content: "Erro de envio";
+}
+
+.align {
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+    .align {
+        text-align: left;
+        padding-left: 8px;
+    }
+}
+
+.svg-icon {
+    background-image: url("../../icons/relatorios.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}

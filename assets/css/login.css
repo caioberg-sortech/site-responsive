@@ -1,0 +1,153 @@
+/* Global Styles */
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #FFFFFF;
+}
+
+/* Rectangle 339 */
+.rectangle {
+    position: absolute;
+    width: 100%;
+    height: 38%;
+    background: #F05734;
+}
+
+/* Auto layout */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    bottom: -60%;
+    position: relative;
+}
+
+.container-login {
+    padding: 0 0.5rem;
+    height: 437.44px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.conteudo-login p {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.conteudo-login h6 {
+    padding: 8% 0 3px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.logo img {
+    padding-top: 18%;
+}
+
+.login {
+    max-width: 296px;
+
+}
+
+.button {
+    border: none;
+    background: #858686;
+    width: 296px;
+    height: 48px;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+input[type="text"] {
+    font-family: 'Montserrat', sans-serif;
+    background: #F4F4F4;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #858686;
+    box-shadow: 0 0 8px 0 #858686;
+}
+
+.inputWithIcon input[type="text"] {
+    padding-left: 40px;
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    left: 3px;
+    top: 32%;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus+i {
+    color: #858686;
+}
+
+.inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus+i {
+    color: #fff;
+    background-color: #858686;
+}
+
+.produto p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 161% */
+
+    letter-spacing: -0.01em;
+
+    /* Neutral/04 */
+
+
+}
+
+.logo2 {
+    margin-left: 2.5px;
+}

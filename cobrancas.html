@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpag - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/cobranca.css">
+</head>
+
+<body>
+    <div class="barra"></div>
+
+    <nav class="menu-lateral_side sidenav shadow-sm ">
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
+        <a href="./dashboard.html" class="menu-lateral__link_side menu-lateral__link_side--dashboard">Dashboard</a>
+        <a href="#"
+            class="menu-lateral__link_side menu-lateral__link_side--cobrancas menu-lateral__link_side--ativo">Cobranças</a>
+        <a href="./relatorios.html" class="menu-lateral__link_side menu-lateral__link_side--relatorios">Relatórios</a>
+    </nav>
+
+    <header class="head">
+        <div class="cabecalho_cel">
+            <div class="cont">
+                <img src="assets/img/logo.svg" alt="Logo Sorpag" class="container__imagem">
+            </div>
+            <div class="cont">
+                <input type="checkbox" id="menu" class="container__botao_menu">
+                <label for="menu">
+                    <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista-menu shadow-sm">
+                    <a href="./dashboard.html" class="menu-lateral__link menu-lateral__link--dashboard">Dashboard</a>
+                    <a href="#"
+                        class="menu-lateral__link menu-lateral__link--cobrancas menu-lateral__link--ativo">Cobranças</a>
+                    <a href="./relatorios.html" class="menu-lateral__link menu-lateral__link--relatorios">Relatórios</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cabecalho">
+            <button class="btn-main-action">
+                <a href="./nova_cobranca.html" class="text-decoration-none text-dark">
+                    <img class="align-bottom" src="assets/icons/add.svg">
+                    Nova Cobrança
+                </a>
+            </button>
+        </div>
+    </header>
+    <h1 class="title">
+        Cobrança
+    </h1>
+    <section class="cont container__page">
+        <div class="box__title">
+            <h2 class="title__container">
+                <div class="square"></div>
+                Todas as cobranças
+            </h2>
+            <div class="button__cobranca-1">
+                <button class="btn dropdown-toggle button-boxes-1" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    2022
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <ul class="nav nav-pills botoes">
+                <li class="nav-item">
+                    <button class="btn nav-link botão active" data-bs-toggle="pill" type="button" aria-selected="true">
+                        Todos
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn nav-link botão" data-bs-toggle="pill" type="button" aria-selected="false">
+                        Processados
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class=" btn nav-link botão" data-bs-toggle="pill" type="button" aria-selected="false">
+                        Aguardando
+                    </button>
+                </li>
+                <li class="button__cobranca-2">
+                    <button class="btn dropdown-toggle button-boxes-1" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        2022
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <table class="tabela-cel">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align">#1</td>
+                    <td>
+                        <div class="status status-processed"></div>
+                    </td>
+                    <td class="svg-icon"></td>
+                </tr>
+                <tr>
+                    <td class="align">#2</td>
+                    <td>
+                        <div class="status status-process"></div>
+                    </td>
+                    <td class="svg-icon"></td>
+                </tr>
+                <tr>
+                    <td class="align">#3</td>
+                    <td>
+                        <div class="status status-erro"></div>
+                    </td>
+                    <td class="svg-icon"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Criação</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Processamento</th>
+                    <th scope="col">Cobranças</th>
+                    <th scope="col">Valor Total</th>
+                    <th scope="col">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align">#1</td>
+                    <td class="align">09 Ago 2022 - 13:45</td>
+                    <td>
+                        <div class="status status-processed"></div>
+                    </td>
+                    <td>14 Out 2022</td>
+                    <td>549</td>
+                    <td>R$ 1.350.000,00</td>
+                    <td class="svg-icon"></td>
+                </tr>
+                <tr>
+                    <td class="align">#2</td>
+                    <td class="align">03 Ago 2022 - 09:45</td>
+                    <td>
+                        <div class="status status-process"></div>
+                    </td>
+                    <td>Aguardando</td>
+                    <td>542</td>
+                    <td>R$ 1.350.000,00</td>
+                    <td class="svg-icon"></td>
+                </tr>
+                <tr>
+                    <td class="align">#3</td>
+                    <td class="align">05 Jul 2022 - 13:45</td>
+                    <td>
+                        <div class="status status-erro"></div>
+                    </td>
+                    <td>10 Ago 2022 </td>
+                    <td> 549</td>
+                    <td>R$ 1.350.000,00</td>
+                    <td class="svg-icon"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ul class="pagination">
+            <li class="mx-2"><a class="page-link page-item" href="#">1</a></li> 
+            <li><a class="page-link page-item" href="#">2</a></li>
+            <li class="mx-2"><a class="page-link page-item" href="#">3</a></li>
+            <li>
+                <a class="page-link page-item" href="#" aria-label="Próximo">
+                    <img class="" src="assets/icons/seta.svg">
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

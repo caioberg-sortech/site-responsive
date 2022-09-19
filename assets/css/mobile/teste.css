@@ -1,0 +1,33 @@
+@import url('./header.css');
+@import url('./sidenav.css');
+@import url('./cobrancas.css');
+@import url('./resumo.css');
+
+
+
+body{
+  background-color: var(--main-bgcolor);
+  font-family: var(--font-principal);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Barra laranja */
+
+.barra{
+  width: 100%;
+  height: 16px;
+  background-color: var(--main-color);
+}
+
+
+
+/* --- Dados diarios --- */
+
+.dados--diarios__titulo{
+  display:inline-flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 37px;
+}

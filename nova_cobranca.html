@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpag - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nova_cobranca/nova_cobranca.css">
+</head>
+<body>
+    <div class="barra"></div>
+
+    <nav class="menu-lateral_side sidenav shadow-sm ">
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
+        <a href="./dashboard.html" class="menu-lateral__link_side menu-lateral__link_side--dashboard">Dashboard</a>
+        <a href="./cobrancas.html" class="menu-lateral__link_side menu-lateral__link_side--cobrancas">Cobranças</a>
+        <a href="./relatorios.html" class="menu-lateral__link_side menu-lateral__link_side--relatorios">Relatórios</a>
+    </nav>
+
+    <header class="head">
+            <div class="cabecalho_cel">
+                <div class="cont">
+                    <img src="assets/img/logo.svg" alt="Logo Sorpag" class="container__imagem"> 
+                </div>
+                <div class="cont">
+                    <input type="checkbox" id="menu" class="container__botao_menu">
+                    <label for="menu">
+                        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                    </label>
+                    <ul class="lista-menu shadow-sm">
+                        <a href="./dashboard.html" class="menu-lateral__link menu-lateral__link--dashboard">Dashboard</a>
+                        <a href="./cobrancas.html" class="menu-lateral__link menu-lateral__link--cobrancas">Cobranças</a>
+                        <a href="./relatorios.html" class="menu-lateral__link menu-lateral__link--relatorios">Relatórios</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="cabecalho">
+                <button class="btn-main-action">
+                    <a href="./nova_cobranca.html" class="text-decoration-none text-dark">
+                        <img class="align-bottom" src="assets/icons/add.svg">
+                        Nova Cobrança
+                    </a>
+                </button>
+            </div>
+    </header>
+    <h1 class="title">
+        Nova Cobrança
+    </h1>
+    <section class="cont container__page">
+        <div class="box__title">
+            <h2 class="nova_cobranca_title">
+                <div class="square"></div>
+                Enviar arquivo
+            </h2>
+        </div>
+        <h6 class="arquivo-text ">
+            Arquivo
+        </h6>
+        <div class="cont-arquivo">
+            <label class="arquivo" for='selecao-arquivo'></label>
+            <input id='selecao-arquivo' type='file'>
+            <p class="descricao">
+                Tipos de arquivos:.txt,.csv ou .xml
+            </p>
+        </div>
+
+        <p class="descricao">
+            Esta cobrança poderá ser cancelada em até 24h
+        </p>
+
+        <div class="envio__agendado">
+            <h6 class="agendado-text col-auto">
+                Envio agendado
+            </h6>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span class="datepicker-toggle">
+                <div class="icon-calend"> <span>22 Ago 2022</span> </div>
+                <input type="date" class="datepicker-input">
+            </span>
+        </div>
+    </section>
+
+    <section class="cont-calendar">
+        <div class="calendar"></div>
+    </section>
+
+    <p class="descricao descricao-calend">
+        Esta cobrança poderá ser cancelada em até 24h após o envio.
+    </p>
+
+    <footer class="bottom__action__bar">
+        <button class="btn-main-action-bottom border-0 ">
+            <a href="./cobrancas.html" class="text-decoration-none text-black">
+                Enviar agora
+            </a>
+        </button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/calendar.js"></script>
+</body>
+</html>

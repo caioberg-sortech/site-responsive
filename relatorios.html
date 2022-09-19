@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpag - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/relatorios.css">
+</head>
+
+<body>
+    <div class="barra"></div>
+
+    <nav class="menu-lateral_side sidenav shadow-sm ">
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
+        <a href="./dashboard.html" class="menu-lateral__link_side menu-lateral__link_side--dashboard">Dashboard</a>
+        <a href="./cobrancas.html" class="menu-lateral__link_side menu-lateral__link_side--cobrancas">Cobranças</a>
+        <a href="#"class="menu-lateral__link_side menu-lateral__link_side--relatorios menu-lateral__link_side--ativo">Relatórios</a>
+    </nav>
+
+    <header class="head">
+        <div class="cabecalho_cel">
+            <div class="cont">
+                <img src="assets/img/logo.svg" alt="Logo Sorpag" class="container__imagem">
+            </div>
+            <div class="cont">
+                <input type="checkbox" id="menu" class="container__botao_menu">
+                <label for="menu">
+                    <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista-menu shadow-sm">
+                    <a href="./dashboard.html" class="menu-lateral__link menu-lateral__link--dashboard">Dashboard</a>
+                    <a href="./cobrancas.html" class="menu-lateral__link menu-lateral__link--cobrancas">Cobranças</a>
+                    <a href="#"
+                        class="menu-lateral__link menu-lateral__link--relatorios menu-lateral__link--ativo">Relatórios</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cabecalho">
+            <button class="btn-main-action">
+                <a href="./nova_cobranca.html" class="text-decoration-none text-dark">
+                    <img class="align-bottom" src="assets/icons/add.svg">
+                    Nova Cobrança
+                </a>
+            </button>
+        </div>
+    </header>
+
+    <section class="cont container__page">
+        <div class="box__title">
+            <h2 class="title__container">
+                <div class="square"></div>
+                Resumo
+            </h2>
+            <div>
+                <button class="btn dropdown-toggle button-boxes-1" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Ago 2022
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="btn dropdown-toggle button-boxes-1" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Cobrança #001
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <button class="btn-main-action-3 ">
+                Baixar arquivo
+            </button>
+        </div>
+        <div class="cards">
+            <div class="cards_card">
+                <img src="assets/icons/sms.svg" alt="Logo Sorpag" class="card__icon"> 
+                <div class="card__desc">
+                    <p class="card__title">SMS enviados</p>
+                    <p class="card__desc--1">675</p>
+                </div> 
+            </div>
+            <div class="cards_card">
+                <img src="assets/icons/email.svg" alt="Logo Sorpag" class="card__icon"> 
+                <div class="card__desc">
+                    <p class="card__title">E-mails enviados</p>
+                    <p class="card__desc--1">833</p>
+                </div> 
+            </div>
+            <div class="cards_card">
+                <img src="assets/icons/envio_errado.svg" alt="Logo Sorpag" class="card__icon"> 
+                <div class="card__desc">
+                    <p class="card__title">Envios que deram errado</p>
+                    <p class="card__desc--1">675</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="cont container__page">
+        <div class="box__title">
+            <h2 class="envios__titulo">
+                <div class="square"></div>
+                Envios
+            </h2>
+            <div class="button__cobranca-1">
+                <button class="btn dropdown-toggle button-boxes-1" type="button" data-bs-toggle="dropdown"aria-expanded="false">
+                    2022
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <button class="btn-main-action-1 ">
+                Baixar relatório
+            </button>
+            <div class="inputWithIcon">
+                <input type="text" placeholder="Buscar CPF ou CNPJ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+           </div>
+            <ul class="nav nav-pills botoes">
+                <li class="nav-item">
+                    <button class="btn nav-link botão active" data-bs-toggle="pill" type="button" aria-selected="true">
+                        Todos
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn nav-link botão" data-bs-toggle="pill" type="button" aria-selected="false">
+                        SMS
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class=" btn nav-link botão" data-bs-toggle="pill" type="button" aria-selected="false">
+                        E-mails
+                    </button>
+                </li>
+                <button class="btn-main-action-2 ">
+                    Baixar relatório
+                </button>
+            </ul>
+        </div>
+
+        <table class="tabela-cel">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Status</th>
+            
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1</td>
+                    <td>
+                        <div class="status type-email"></div>
+                    </td>
+                    <td> Enviado</td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td>
+                        <div class="status type-sms"></div>
+                    </td>
+                    <td> Enviado</td>
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td>
+                        <div class="status type-email"></div>
+                    </td>
+                    <td> Enviado</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Cliente (CPF ou CNPJ)</th>
+                    <th scope="col">Pagamento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#01</td>
+                    <td class="align">09 Ago 2022</td>
+                    <td>
+                        <div class="status type-erro"></div>
+                    </td>
+                    <td>Enviado</td>
+                    <td>009.932933-23</td>
+                    <td>Pendente</td>
+                </tr>
+                <tr>
+                    <td>#01</td>
+                    <td class="align">09 Ago 2022</td>
+                    <td>
+                        <div class="status type-email"></div>
+                    </td>
+                    <td>Enviado</td>
+                    <td>009.932933-23</td>
+                    <td>Pendente</td>
+                </tr>
+                <tr>
+                    <td>#01</td>
+                    <td class="align">09 Ago 2022</td>
+                    <td>
+                        <div class="status type-sms"></div>
+                    </td>
+                    <td>Enviado</td>
+                    <td>009.932933-23</td>
+                    <td>Pendente</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="pagination">
+            <li class="mx-2"><a class="page-link page-item" href="#">1</a></li> 
+            <li><a class="page-link page-item" href="#">2</a></li>
+            <li class="mx-2"><a class="page-link page-item" href="#">3</a></li>
+            <li>
+                <a class="page-link page-item" href="#" aria-label="Próximo">
+                    <img class="" src="assets/icons/seta.svg">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/177a4b9dc3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
